@@ -7,7 +7,8 @@
     "tsc": "tsc",
     "dev": "npx ts-node ./src/app.ts",
     "prod": "npx tsc && node ./build/app.js",
-    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "test": "jest --watch  --verbose --config ./jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
   "homepage": "https://github.com/jahskee/node-rest#readme",
   "dependencies": {
     "@types/express": "^4.17.7",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "expresss": "0.0.0",
     "jade": "^1.11.0",
@@ -28,7 +32,12 @@
     "nodemon": "^2.0.4",
     "open": "^7.2.0",
     "ts-node": "^9.0.0",
-    "ts-node-dev": "^1.0.0-pre.61",
+    "ts-node-dev": "^1.0.0-pre.61"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
   }
 }
