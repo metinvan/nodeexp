@@ -42,16 +42,23 @@ module.exports = (function createModule() {
   }
 
   function findClientId(data: string, start = 0) {
-  
     const clientId = data.substr(start, data.length - start)
     return  { clientId }
   }
 
-  return {
-    extractName,
+  const pub = {
+    extractName
+  }
+
+  const priv = {
     findFirstName,
     findLastName,
     findClientId
+  }
+
+  return {
+    ...pub,
+    priv
   }
 
 })()
