@@ -24,7 +24,7 @@ module.exports = (function Server() {
   app.post("/api/v1/parse", function(req, res) {
     let data:any = req.body.data || {}
 
-    const userInfo = utils.extractName(data)
+    const userInfo = utils.extractName(data, "v1")
   
     res.json({
       statusCode: 200,
@@ -32,17 +32,17 @@ module.exports = (function Server() {
     })
   })
   
-  app.get("/api/v2/parse", function(req, res) {
-    res.send({
-      statusCode: "200",
-      data: {
-        firstname: "",
-        lastname: ""
-      }
+  app.post("/api/v2/parse", function(req, res) {
+    let data:any = req.body.data || {}
+
+    const userInfo = utils.extractName(data, "v2")
+  
+    res.json({
+      statusCode: 200,
+      data: userInfo
     })
   })
   
-  var isBrowser:boolean = true
   app.listen(3000, require("./utils/listener").listener)
 
 })()

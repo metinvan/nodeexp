@@ -1,25 +1,46 @@
 const utils = require("./utils")
-
-describe('', ()=>{
-
+describe('Run test suite', ()=>{
   const testData = "JOHN0000MICHAEL0009994567"
-  let idx = 0
+  
+  describe('test public functions', ()=>{
 
-  it('test extract first name', ()=>{
-    const result = utils.priv.findFirstName(testData)
-    idx = result.end
-    expect(result).toEqual({start: 0, end: 8, firstName: "JOHN0000"})
+    it ('text extract name, version 1', ()=>{
+      const result = utils.extractName(testData)
+      expect(result).toEqual({
+        firstName: "JOHN0000",
+        lastName: "MICHAEL000",
+        clientId: "9994567"
+      })
+    })
+  
+    it ('text extract name, version 2', ()=>{
+      const result = utils.extractName(testData, "v2")
+      expect(result).toEqual({
+        firstName: "JOHN",
+        lastName: "MICHAEL",
+        clientId: "999-4567"
+      })
+    })  
   })
-
-  it('test extract last name', ()=>{
-    const result = utils.priv.findLastName(testData, idx)
-    expect(result).toEqual({start: idx, end: 18, lastName: "MICHAEL000"})
-    idx = result.end
+  
+  describe('test private functions', ()=>{
+  
+    let idx = 0
+    it ('test extract first name', ()=>{
+      const result = utils.priv.findFirstName(testData)
+      idx = result.end
+      expect(result).toEqual({start: 0, end: 8, firstName: "JOHN0000"})
+    })
+  
+    it ('test extract last name', ()=>{
+      const result = utils.priv.findLastName(testData, idx)
+      expect(result).toEqual({start: idx, end: 18, lastName: "MICHAEL000"})
+      idx = result.end
+    })
+  
+    it ('test extract clientId', ()=>{
+      const result = utils.priv.findClientId(testData, idx)
+      expect(result).toEqual({ clientId: "9994567" })
+    })
   })
-
-  it('test extract clientId', ()=>{
-    const result = utils.priv.findClientId(testData, idx)
-    expect(result).toEqual({ clientId: "9994567" })
-  })
-
 })

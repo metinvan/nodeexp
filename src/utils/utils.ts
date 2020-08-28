@@ -1,12 +1,20 @@
 module.exports = (function createModule() {
 
-  function extractName(data: string) {
+  function extractName(data: string, version = "v1") {
     const res1 = findFirstName(data)
     const res2 = findLastName(data, res1.end)
     const res3 = findClientId(data, res2.end)
 
+    if (version === "v2") {
+      res1.firstName = res1.firstName.replace("0000",'')
+      res2.lastName = res2.lastName.replace("000",'')
+      let clientId = res3.clientId
+      clientId = clientId .substring(0, 3)+'-'+clientId.substr(-4)
+      res3.clientId = clientId
+    }
+  
     return {
-      firstName:res1.firstName,
+      firstName: res1.firstName,
       lastName:res2.lastName,
       clientId: res3.clientId
     }
@@ -18,7 +26,6 @@ module.exports = (function createModule() {
      let firstName = ''
      for (let i = 0; i < data.length; i++) {
        if(data.substr(i,4) === '0000') {
-         console.log('firstname found' )
          end = i+4
          firstName = data.substr(start,end)
          break
@@ -56,7 +63,6 @@ module.exports = (function createModule() {
     findLastName,
     findClientId
   }
-
 
   return {
     ...pub,
