@@ -1,5 +1,17 @@
 module.exports = (function createModule() {
 
+  function extractName(data: string) {
+    const res1 = findFirstName(data)
+    const res2 = findLastName(data, res1.end)
+    const res3 = findClientId(data, res2.end)
+
+    return {
+      firstName:res1.firstName,
+      lastName:res2.lastName,
+      clientId: res3.clientId
+    }
+  }
+
   function findFirstName(data:string, start = 0) {
      // extract first name, check for 4 consecutive zeros then get last index
      let end = 0
@@ -36,6 +48,7 @@ module.exports = (function createModule() {
   }
 
   return {
+    extractName,
     findFirstName,
     findLastName,
     findClientId

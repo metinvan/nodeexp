@@ -23,16 +23,12 @@ module.exports = (function Server() {
   
   app.post("/api/v1/parse", function(req, res) {
     let data:any = req.body.data || {}
-   
-    const { firstName, start, end } = utils.findFirstName(data)
+
+    const userInfo = utils.extractName(data)
   
     res.json({
       statusCode: 200,
-      data: {
-        firstName,
-        lastName: "",
-        clientId: ""
-      }
+      data: userInfo
     })
   })
   
