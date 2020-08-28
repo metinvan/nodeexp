@@ -1,11 +1,17 @@
 import express = require('express')
+const path = require('path')
+const { LocalStorage } = require("node-localstorage")
+global.localStorage = new LocalStorage('./__tmp/localStorage');
 
 const app: express.Application = express()
 
-app.get('/', function(req, res) {
-  res.send('Hello World')
-})
+// jade web pages
+app.set('views', path.join(__dirname, '../src/public'));
+app.set('view engine', 'jade');
 
-app.listen(3000, function() {
-  console.log('Example app listening1 on port 3000')
-})
+app.get('/', function(req, res, next) {
+    res.render('index', { title: 'Hello World!' });
+});
+
+app.listen(3000, require("./listener").listener)
+
