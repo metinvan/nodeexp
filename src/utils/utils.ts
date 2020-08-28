@@ -22,15 +22,17 @@ module.exports = (function createModule() {
     for (let i = start; i < data.length; i++) {
       if(data.substr(i,3) === '000') {
         end = i+3
-        lastName = data.substr(start, end-start)
+        lastName = data.substr(start, end - start)
         break
       }
     }
     return  { start, end, lastName }
   }
 
-  function findClientId(data: string) {
-
+  function findClientId(data: string, start = 0) {
+  
+    const clientId = data.substr(start, data.length - start)
+    return  { clientId }
   }
 
   return {

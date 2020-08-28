@@ -14,6 +14,11 @@ describe('', ()=>{
   it('test extract last name', ()=>{
     const result = utils.findLastName(testData, idx)
     expect(result).toEqual({start: idx, end: 18, lastName: "MICHAEL000"})
+    idx = result.end
   })
-  
+
+  it('test extract clientId', ()=>{
+    const result = utils.findClientId(testData, idx)
+    expect(result).toEqual({ clientId: "9994567" })
+  })
 })
