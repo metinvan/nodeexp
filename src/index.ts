@@ -2,9 +2,11 @@
 import express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const utils = require('./utils/utils')
 
-// Design Patterns: IIFE, Revealing Moudle Pattern, Functional Programming
-module.exports = (function server() {
+// Functional Programming & OOP
+// Design Patterns: IIFE, Revealing Moudle Pattern, 
+module.exports = (function Server() {
 
   const app: express.Application = express()
   
@@ -22,16 +24,7 @@ module.exports = (function server() {
   app.post("/api/v1/parse", function(req, res) {
     let data:any = req.body.data || {}
    
-    // extract first name, check for 4 consecutive zeros then get last index
-    let start = 0
-    let firstName = ''
-    for (let i = 0; i < data.length; i++) {
-      if(data.substr(i,4) === '0000') {
-        console.log('firstname found' )
-        firstName = data.substr(start, i+4)
-        break
-      }
-    }
+    const firstName = utils.findFirstName(data)
   
     res.json({
       statusCode: 200,
@@ -56,9 +49,6 @@ module.exports = (function server() {
   var isBrowser:boolean = true
   app.listen(3000, require("./utils/listener").listener)
 
-  return {
-
-  }
 })()
 
 
