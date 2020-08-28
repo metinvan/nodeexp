@@ -36,7 +36,7 @@
 
 ### Unit Testing
    
-   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two API call tests, one for each version of the API endpoints
+   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two API call tests one for each version of the API endpoints.
   
 
 
