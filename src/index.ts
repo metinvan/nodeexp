@@ -4,8 +4,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const utils = require('./utils/utils')
 
-// Functional Programming & OOP
-// Design Patterns: IIFE, Revealing Moudle Pattern, 
+// Functional Programming
+// Design Patterns: IIFE, Revealing Module Pattern, 
 module.exports = (function Server() {
 
   const app: express.Application = express()
