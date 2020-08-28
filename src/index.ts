@@ -5,13 +5,8 @@ global.localStorage = new LocalStorage('./__tmp/localStorage');
 
 const app: express.Application = express()
 
-// jade web pages
-app.set('views', path.join(__dirname, '../src/public'));
-app.set('view engine', 'jade');
-
-app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Hello World!' });
-});
-
+app.get('/', function(req, res) {
+  res.sendFile('index.html', {root: 'src/public'})
+})
 app.listen(3000, require("./listener").listener)
 
