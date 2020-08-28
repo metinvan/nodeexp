@@ -1,3 +1,9 @@
+/*
+Developer: Jaizon Fernando Lubaton
+email: jahskee@yahoo.com
+Date: August 28, 2020
+License: MIT
+*/
 
 import express = require('express')
 const bodyParser = require('body-parser')
@@ -21,6 +27,7 @@ module.exports = (function Server() {
     res.sendFile('index.html', { root: 'public' })
   })
 
+  // api call version 1
   app.post("/api/v1/parse", function (req, res) {
     let data: any = req.body.data || {}
 
@@ -32,6 +39,7 @@ module.exports = (function Server() {
     })
   })
 
+    // api call version 2
   app.post("/api/v2/parse", function (req, res) {
     let data: any = req.body.data || {}
 
@@ -43,6 +51,7 @@ module.exports = (function Server() {
     })
   })
 
+  // listen for request
   app.listen(3000, require("./utils/listener").listener)
 
 })()
