@@ -4,11 +4,11 @@
   "description": "A Node.js Rest API example server",
   "main": "index.js",
   "scripts": {
-    "tsc": "npx tsc",
+    "tsc": "tsc",
     "dev": "npx ts-node ./src/app.ts",
     "prod": "npx tsc && node ./build/app.js",
-    "start": "npx nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
-  }, 
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jahskee/node-rest.git"
@@ -23,6 +23,10 @@
     "@types/express": "^4.17.7",
     "express": "^4.17.1",
     "expresss": "0.0.0",
+    "jade": "^1.11.0",
+    "node-localstorage": "^2.1.6",
+    "nodemon": "^2.0.4",
+    "open": "^7.2.0",
     "ts-node": "^9.0.0",
     "ts-node-dev": "^1.0.0-pre.61",
     "typescript": "^4.0.2"
