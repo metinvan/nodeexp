@@ -45,16 +45,18 @@ module.exports = (function createModule() {
     const clientId = data.substr(start, data.length - start)
     return  { clientId }
   }
-
+  // public method
   const pub = {
     extractName
   }
 
+  // private methods - exposed for unit testing
   const priv = {
     findFirstName,
     findLastName,
     findClientId
   }
+
 
   return {
     ...pub,
