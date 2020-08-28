@@ -7,6 +7,12 @@
   extract the firstName, lastName and the clientID. Afterwards, a JSON object response 
   will be sent back to the the APi caller, with a very well formatted field values.
 
+### Important Commands
+  ```
+  npm start
+  npm test
+  ```
+
 ### The API urls:
 
   ```
