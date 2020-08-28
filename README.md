@@ -2,7 +2,7 @@
 
 ### Introduction
 
-  This Node.js based back-end application have two versions of the API 
+  This Node.js based back-end application includes two versions of the API 
   that parses the http post data in the form of JSON object. The back-end will 
   extract the firstName, lastName and the clientID. Afterwards, a JSON object response 
   will be sent back to the the APi caller, with a very well formatted field values.
@@ -15,9 +15,9 @@
   ```
 
 ### The Input Data
-    ```
-    POST Data = { "data": "JOHN0000MICHAEL0009994567" }
-    ```
+  ```
+  POST Data = { "data": "JOHN0000MICHAEL0009994567" }
+  ```
 
 ### The Response Data
 
@@ -36,16 +36,12 @@
 
 ### Unit Testing
    
-   Jest unit testing was added to test core or significant features it also includes
-   actual api call test to http://localhost:3000/api/v1/parse and http://localhost:3000/api/v2/parse
-
-### ScreenShots
-
-![Test Image 4](https://github.com/tograh/testrepository/3DTest.png 
+   Jest unit testing was added to test core or significant features, such as the functions used to parse and format the input data. Likewise, it also includes two API call tests, one for each version.
+  
 
 
-
-Thank you,
+### Thank you,
 
 Jaizon Lubaton
+
 Software Engineer
