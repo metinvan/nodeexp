@@ -24,7 +24,7 @@ module.exports = (function Server() {
   app.post("/api/v1/parse", function(req, res) {
     let data:any = req.body.data || {}
    
-    const firstName = utils.findFirstName(data)
+    const { firstName, start, end } = utils.findFirstName(data)
   
     res.json({
       statusCode: 200,
