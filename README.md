@@ -12,6 +12,12 @@
    WebPack is the main build tool to concatenate, compress or minify the source code 
    for faster loading / execution time when the application will be deployed to production.
 
+### Paradigm & Design Patterns
+
+  The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
+  It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns 
+  are the IIFE and Revealing Module Pattern.
+  
 ### Important Commands
 
   ```
@@ -66,13 +72,8 @@
   Future improvements for this application, is to deploy the back-end code to Serveless platform such as GCP Cloud Function, AWS Lambda or Azure Function. This will reduce maintenance cost and the back-end can auto-scale to handle
   larger loads.
 
-### Paradigm & Design Patterns
 
-  The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
-  It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns 
-  are the IIFE and Revealing Module Pattern.
 
-  
 
 ### Thank you,
 
