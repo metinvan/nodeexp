@@ -57,7 +57,7 @@
 
 ### Jest For Testing 
    
-   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API call to test each version of the API endpoints.
+  Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API calls to test each version of the API endpoints.
 
   ![jest test](https://github.com/jahskee2/node-rest/blob/develop/img/npm-run-test.jpg?raw=true)
   
