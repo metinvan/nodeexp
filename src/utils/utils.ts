@@ -1,3 +1,10 @@
+/*  =====================================
+Developer: Jaizon Fernando Lubaton
+email: jahskee@yahoo.com
+Date: August 28, 2020
+License: MIT
+========================================= */
+
 module.exports = (function createModule() {
 
   function extractName(data: string, version = "v1") {
