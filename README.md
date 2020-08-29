@@ -2,21 +2,17 @@
 
 ### Introduction
 
-  This Node.js based back-end application includes two versions of the API 
-  that parses the http post data in the form of a JSON object. The back-end will 
-  extract the firstName, lastName and the clientId. Afterwards, a JSON object response 
-  will be sent back to the APi client, with a well formatted field values.
+  This Node.js based back-end application includes two versions of the API that parses the HTTP post data in the form of a JSON object. The back-end will extract the firstName, lastName, and the clientId. Afterward, a JSON object response will be sent back to the API client, with well-formatted field values.
 
 ### Node, TypeScript, Jest & WebPack
 
-   WebPack is the main build tool to concatenate, compress or minify the source code 
-   for faster loading / execution time when the application will be deployed to production.
+  WebPack is the main build tool to concatenate, compress or minify the source code for faster loading/execution time when the application will be deployed to production.
 
   ![npm start](https://github.com/jahskee2/node-rest/blob/master/img/webpack-npm-start.png?raw=true)
 
 ### Functional Programming, Revealing Module Pattern & IIFE
 
-  The Application was mostly implemented using the modern Functional Programming paradigm. Which makes the code much easier to reason and it is very intuitive when everything is composed by functions. It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns used in this project is the Revealing Module Pattern and the IIFE.
+  The Application was mostly implemented using the modern Functional Programming paradigm. This makes the code much easier to reason and it is very intuitive when everything is composed of functions. It also improves the handling of asynchronous code, callbacks, parallel processing, and threading for future requirements. The most significant design patterns used in this project is the Revealing Module Pattern and the IIFE.
 
 ### Important Commands
 
@@ -40,8 +36,7 @@
 
 ### The Response Data
 
-  1. The first API version, after the parsing or extraction, the zero strings are not 
-      removed or no formatting of data will be made. Please notice the trailing zeroes remains in the field values.
+  1. The first API version, after the parsing or extraction, the zero strings are not removed or no formatting of data will be made. Please notice the trailing zeroes remain in the field values.
 
   ```
   Response Data = { statusCode: 200, data: { firstName: "JOHN0000", lastName: "MICHAEL000", clientId: "9994567" }}
