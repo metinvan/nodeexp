@@ -1,9 +1,9 @@
-/*
+/* =====================================
 Developer: Jaizon Fernando Lubaton
 email: jahskee@yahoo.com
 Date: August 28, 2020
 License: MIT
-*/
+========================================= */
 
 const utils = require("./utils")
 describe('Run test suite', () => {

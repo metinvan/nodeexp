@@ -1,20 +1,23 @@
-/*
+/* =====================================
 Developer: Jaizon Fernando Lubaton
 email: jahskee@yahoo.com
 Date: August 28, 2020
 License: MIT
-*/
 
-import express = require('express')
+-----------------------------------
+  Functional Programming
+  Design Patterns: IIFE, Revealing Module Pattern, 
+========================================= */
+
+
+const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const utils = require('./utils/utils')
 
-// Functional Programming
-// Design Patterns: IIFE, Revealing Module Pattern, 
-module.exports = (function Server() {
+export default (function Server() {
 
-  const app: express.Application = express()
+  const app: any = express()
 
   app.use(bodyParser.urlencoded({ extended: false }))
   app.use(bodyParser.json())
@@ -23,12 +26,12 @@ module.exports = (function Server() {
   /*======== Setup the Routes =========*/
 
   // serve the static page
-  app.get('/', function (req, res) {
-    res.sendFile('index.html', { root: 'public' })
+  app.get('/', function (req: any, res: any) {
+    res.sendFile('index.html', { root: 'src/public' })
   })
 
   // api call version 1
-  app.post("/api/v1/parse", function (req, res) {
+  app.post("/api/v1/parse", function (req: any, res: any) {
     let data: any = req.body.data || {}
 
     const userInfo = utils.extractName(data, "v1")
@@ -39,8 +42,8 @@ module.exports = (function Server() {
     })
   })
 
-    // api call version 2
-  app.post("/api/v2/parse", function (req, res) {
+  // api call version 2
+  app.post("/api/v2/parse", function (req: any, res: any) {
     let data: any = req.body.data || {}
 
     const userInfo = utils.extractName(data, "v2")

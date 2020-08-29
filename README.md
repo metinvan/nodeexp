@@ -3,11 +3,17 @@
 ### Introduction
 
   This Node.js based back-end application includes two versions of the API 
-  that parses the http post data in the form of JSON object. The back-end will 
-  extract the firstName, lastName and the clientID. Afterwards, a JSON object response 
-  will be sent back to the the APi caller, with a very well formatted field values.
+  that parses the http post data in the form of a JSON object. The back-end will 
+  extract the firstName, lastName and the clientId. Afterwards, a JSON object response 
+  will be sent back to the APi client, with a well formatted field values.
+
+### WebPack & TypeScript
+
+   WebPack is the main build tool to concatenate, compress or minify the source code 
+   for faster loading / execution time when the application will be deployed to production.
 
 ### Important Commands
+
   ```
   npm start
   npm test
@@ -21,30 +27,44 @@
   ```
 
 ### The Input Data
+
   ```
   POST Data = { "data": "JOHN0000MICHAEL0009994567" }
   ```
 
 ### The Response Data
 
-  1. The first version, after the parssing or extraction, the zero strings are not 
-      removed or no formatting of data will be made. Please notice the trailing zeroes are as is.
+  1. The first API version, after the parsing or extraction, the zero strings are not 
+      removed or no formatting of data will be made. Please notice the trailing zeroes remains in the field values.
+
   ```
   Response Data = { statusCode: 200, data: { firstName: "JOHN0000", lastName: "MICHAEL000", clientId: "9994567" }}
   ``` 
 
-  2. The second version, after the parssing or extraction, takes extra steps by removing the trailing zeroes and 
-      formating the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were removed.
+  2. The second API version, after the parssing or extraction, it will take extra steps by removing the trailing zeroes  
+      and formatting the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
 
   ```
   Response Data =  { statusCode: 200, data: { firstName: "JOHN", lastName: "MICHAEL", clientId: "999-4567" } }
   ``` 
 
-### Unit Testing
-   
-   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two API call tests one for each version of the API endpoints.
-  
+### GitFlow and CI/CD Pipeline
 
+    GitFlow pattern will used in the code repository hosted in GitHub. There are develop, feature & hotfix branch that creates new pull request to merge to the master branch. Upon checkin to develop branch, it will be deployed to the development Server. Then, it will run the CI/CD pipeline that includes the Jest, API, Integration or UI testings. Finally, with the master branch, upon merge from staging branch it will be deployed to the Production environment.
+
+### Jest For Testing 
+   
+   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API call to tests each version of the API endpoints.
+  
+### Docker & Kubernetes Ready
+
+  This application is docker ready, it is build on top of a minimum Linux disk image with Node 12 and npm package
+  readily installed. The image can be checked in to a docker registry such as DockerHub.
+
+### Serverless Node.js Back-End
+   
+  Future improvements for this application, is to deploy the back-end code to Serveless platform such as GCP Cloud Function, AWS Lambda or Azure Function. This will reduce maintenance cost and the back-end can auto-scale to handle
+  larger loads.
 
 
 ### Thank you,
