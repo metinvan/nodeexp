@@ -63,16 +63,16 @@
   
 ### Docker & Kubernetes Ready
 
-  This application is docker ready, it is build on top of a minimum Linux disk image with Node 12 and npm package readily installed. The image can be checked in to a docker registry such as DockerHub.
+  This application is docker ready, it is built on top of a minimum Linux disk image with Node 12 and npm package readily installed. The image can be checked in to a docker registry such as DockerHub.
 
 ### Serverless Node.js Back-End
    
-  Future improvements for this application, is to deploy the back-end code to Serveless platform such as GCP Cloud Function, AWS Lambda or Azure Function. This will reduce maintenance cost and the back-end can auto-scale to handle
+  Future improvements for this application is to deploy the back-end code to Serverless platforms such as GCP Cloud Function, AWS Lambda, or Azure Function. This will reduce maintenance cost and the back-end can auto-scale to handle
   larger loads.
 
 ### Summary
 
-  Node.js is a pleasure to work with, its significance is noticeable in many data and I/O intensive applications. At its core is the fast V8 engine developed by Google, the concept of event-loop, libuv, thread-pool, non-blocking UI, callbacks and promises. Which makes it very appealing to integrate into the modern systems. Node.js are installed on many browsers, devices and platforms. From web to back-end, to mobile and desktop app, it gives developers the ability to work as a full-stack. Other breakthrough features includes its natural support for asyncronicity, parallel processing, real-time streaming and Functional Programming. The future of Node.js is bright, also it is now being used in many different domains.
+  Node.js is a pleasure to work with, its significance is noticeable in many data and I/O intensive applications. At its core is the fast V8 engine developed by Google, the concept of event-loop, libuv, thread-pool, non-blocking UI, callbacks, and promises. Which makes it very appealing to integrate into the modern systems. Node.js are installed on many browsers, devices, and platforms. From web to back-end, to mobile and desktop app, it gives developers the ability to work as a full-stack. Other breakthrough features include its natural support for asynchronicity, parallel processing, real-time streaming, and Functional Programming. The future of Node.js is bright, also it is now being used in many different domains.
 
 
 
