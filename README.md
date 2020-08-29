@@ -60,7 +60,7 @@
 
 ### GitFlow and CI/CD Pipeline
 
-    GitFlow pattern will used in the code repository hosted in GitHub. There are develop, feature & hotfix branch that creates new pull request to merge to the master branch. Upon checkin to develop branch, it will be deployed to the development Server. Then, it will run the CI/CD pipeline that includes the Jest, API, Integration or UI testings. Finally, with the master branch, upon merge from staging branch it will be deployed to the Production environment.
+  GitFlow pattern will used in the code repository hosted in GitHub. There are develop, feature & hotfix branch that creates new pull request to merge to the master branch. Upon checkin to develop branch, it will be deployed to the development Server. Then, it will run the CI/CD pipeline that includes the Jest, API, Integration or UI testings. Finally, with the master branch, upon merge from staging branch it will be deployed to the Production environment.
 
 ### Jest For Testing 
    
