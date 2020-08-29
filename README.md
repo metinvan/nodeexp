@@ -14,7 +14,7 @@
 
   ![npm start](https://github.com/jahskee2/node-rest/blob/master/img/webpack-npm-start.png?raw=true)
 
-### Paradigm & Design Patterns
+### Functional Programming, Revealing Module Pattern & IIFE
 
   The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
   It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns 
