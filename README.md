@@ -17,7 +17,7 @@
   The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
   It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns 
   are the IIFE and Revealing Module Pattern.
-  
+
 ### Important Commands
 
   ```
@@ -72,6 +72,9 @@
   Future improvements for this application, is to deploy the back-end code to Serveless platform such as GCP Cloud Function, AWS Lambda or Azure Function. This will reduce maintenance cost and the back-end can auto-scale to handle
   larger loads.
 
+### Summary
+
+  Node.js is a pleasure to work with, it is implemented with a very fast core V8 engine that are installed on many browsers, devices and platforms. From web, back-end, mobile and desktop app, it gives the developer the ability to do fullstack development. Likewie, Asyncronous, real-time streaming and Functional Programming are built-in to the Node.js core features. Other unique offerings are the even-loop, thread-pool, non-blocking UI thread, callbacks and promises makes it very appealing to integrate into the modern IT systems. The future of Node.js is bright and it is now being used in many other domains.
 
 
 
