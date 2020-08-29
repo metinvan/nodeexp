@@ -44,7 +44,7 @@
 
   ![api v1](https://github.com/jahskee2/node-rest/blob/master/img/postmant-run-v1.png?raw=true)
 
-  2. The second API version, after the parssing or extraction, it will take extra steps by removing the trailing zeroes and formatting the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
+  2. The second API version, after the parsing or extraction, it will take extra steps by removing the trailing zeroes and formatting the client-id by inserting a hyphen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
 
   ```
   Response Data =  { statusCode: 200, data: { firstName: "JOHN", lastName: "MICHAEL", clientId: "999-4567" } }
@@ -53,7 +53,7 @@
 
 ### GitFlow and CI/CD Pipeline
 
-  GitFlow pattern will used in the code repository hosted in GitHub. There are develop, feature & hotfix branch that creates new pull request to merge to the master branch. Upon checkin to develop branch, it will be deployed to the development Server. Then, it will run the CI/CD pipeline that includes the Jest, API, Integration or UI testings. Finally, with the master branch, upon merge from staging branch it will be deployed to the Production environment.
+  GitFlow pattern will be used in the code repository hosted in GitHub. There are develop, feature & hotfix branch that creates a new pull request to merge to the master branch. Upon check in to develop a branch, it will be deployed to the Development Server. Then, it will run the CI/CD pipeline that includes the Jest, API, Integration, or UI testings. Finally, with the master branch, upon merge from the staging branch, it will be deployed to the Production environment.
 
 ### Jest For Testing 
    
