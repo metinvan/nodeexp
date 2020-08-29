@@ -78,7 +78,7 @@
 
 ### Thank you,
 ```
-Jaizon Lubaton
+Jaizon Fernando Lubaton
 Software Engineer
 email: jahskee@yahoo.com
 phone: 571-355-2314
