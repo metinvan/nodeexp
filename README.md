@@ -64,14 +64,13 @@
 
 ### Jest For Testing 
    
-   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API call to tests each version of the API endpoints.
+   Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API call to test each version of the API endpoints.
 
   ![jest test](https://github.com/jahskee2/node-rest/blob/develop/img/npm-run-test.jpg?raw=true)
   
 ### Docker & Kubernetes Ready
 
-  This application is docker ready, it is build on top of a minimum Linux disk image with Node 12 and npm package
-  readily installed. The image can be checked in to a docker registry such as DockerHub.
+  This application is docker ready, it is build on top of a minimum Linux disk image with Node 12 and npm package readily installed. The image can be checked in to a docker registry such as DockerHub.
 
 ### Serverless Node.js Back-End
    
