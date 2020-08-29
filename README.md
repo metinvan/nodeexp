@@ -12,6 +12,8 @@
    WebPack is the main build tool to concatenate, compress or minify the source code 
    for faster loading / execution time when the application will be deployed to production.
 
+  ![npm start](https://github.com/jahskee2/node-rest/blob/master/img/webpack-npm-start.png?raw=true)
+
 ### Paradigm & Design Patterns
 
   The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
