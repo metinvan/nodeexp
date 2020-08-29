@@ -74,7 +74,7 @@
 
 ### Summary
 
-  Node.js is a pleasure to work with, it's significance is noticeable in many data and I/O intensive applications. At its core is the fast V8 engine developed by Google, the concept of even-loop, libuv, thread-pool, non-blocking UI, callbacks and promises. Which makes it very appealing to integrate into the modern systems. Node.js are installed on many browsers, devices and platforms. From web to back-end, to mobile and desktop app, it gives the developer the ability to work full-stack. Other breakthrough features includes its built-in support for asyncronicity, real-time streaming and Functional Programming. The future of Node.js is bright, also it is now being used in many different domains.
+  Node.js is a pleasure to work with, it's significance is noticeable in many data and I/O intensive applications. At its core is the fast V8 engine developed by Google, the concept of even-loop, libuv, thread-pool, non-blocking UI, callbacks and promises. Which makes it very appealing to integrate into the modern systems. Node.js are installed on many browsers, devices and platforms. From web to back-end, to mobile and desktop app, it gives the developer the ability to work full-stack. Other breakthrough features includes its natural support for asyncronicity, real-time streaming and Functional Programming. The future of Node.js is bright, also it is now being used in many different domains.
 
 
 
