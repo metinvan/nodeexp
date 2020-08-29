@@ -7,7 +7,7 @@
   extract the firstName, lastName and the clientId. Afterwards, a JSON object response 
   will be sent back to the APi client, with a well formatted field values.
 
-### Node, WebPack & TypeScript
+### Node, TypeScript & WebPack
 
    WebPack is the main build tool to concatenate, compress or minify the source code 
    for faster loading / execution time when the application will be deployed to production.
