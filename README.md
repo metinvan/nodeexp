@@ -51,8 +51,7 @@
 
   ![api v1](https://github.com/jahskee2/node-rest/blob/master/img/postmant-run-v1.png?raw=true)
 
-  2. The second API version, after the parssing or extraction, it will take extra steps by removing the trailing zeroes  
-      and formatting the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
+  2. The second API version, after the parssing or extraction, it will take extra steps by removing the trailing zeroes and formatting the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
 
   ```
   Response Data =  { statusCode: 200, data: { firstName: "JOHN", lastName: "MICHAEL", clientId: "999-4567" } }
