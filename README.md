@@ -80,5 +80,6 @@
 ```
 Jaizon Lubaton
 Software Engineer
-jahskee@yahoo.com
+email: jahskee@yahoo.com
+phone: 571-355-2314
 ```
