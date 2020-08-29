@@ -16,7 +16,7 @@
 
 ### Functional Programming, Revealing Module Pattern & IIFE
 
-  The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and it is very intuitive when you compose only using functions. It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns used in this project are the IIFE and Revealing Module Pattern.
+  The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code much easier to reason and it is very intuitive when everything is composed by functions. It also improves handling of asynchronous code, callbacks, parallel processing and threading for future requirements. The most significant design patterns used in this project are the IIFE and Revealing Module Pattern.
 
 ### Important Commands
 
