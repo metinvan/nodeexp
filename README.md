@@ -12,6 +12,8 @@
    WebPack is the main build tool to concatenate, compress or minify the source code 
    for faster loading / execution time when the application will be deployed to production.
 
+  ![npm start](https://github.com/jahskee2/node-rest/blob/master/img/webpack-npm-start.png?raw=true)
+
 ### Paradigm & Design Patterns
 
   The Application was mostly implemented using the modern Functional Programming paradigm. Which makes code easier to reason and very intuitive.
@@ -47,12 +49,15 @@
   Response Data = { statusCode: 200, data: { firstName: "JOHN0000", lastName: "MICHAEL000", clientId: "9994567" }}
   ``` 
 
+  ![api v1](https://github.com/jahskee2/node-rest/blob/master/img/postmant-run-v1.png?raw=true)
+
   2. The second API version, after the parssing or extraction, it will take extra steps by removing the trailing zeroes  
       and formatting the client-id by inserting a hypen character after the third character. Please notice the trailing zeroes were trimmed to produce more intuitive values.
 
   ```
   Response Data =  { statusCode: 200, data: { firstName: "JOHN", lastName: "MICHAEL", clientId: "999-4567" } }
   ``` 
+  ![api v2](https://github.com/jahskee2/node-rest/blob/master/img/postmant-run-v2.png?raw=true)
 
 ### GitFlow and CI/CD Pipeline
 
@@ -61,6 +66,8 @@
 ### Jest For Testing 
    
    Jest unit testing was added to verify core or significant features. Most important are the functions used to parse and format the input data. Likewise, it also includes two actual API call to tests each version of the API endpoints.
+
+  ![jest test](https://github.com/jahskee2/node-rest/blob/develop/img/npm-run-test.jpg?raw=true)
   
 ### Docker & Kubernetes Ready
 
