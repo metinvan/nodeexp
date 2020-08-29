@@ -13,10 +13,11 @@ describe('Run API Call Test', () => {
   const respoonse_v2 = { statusCode: 200, data: { firstName: "JOHN", lastName: "MICHAEL", clientId: "999-4567" } }
 
   it('make api call on version 1', async () => {
+    const URL1 = 'http://localhost:3000/api/v1/parse'
 
     try {
       const resp = await axios({
-        url: 'http://localhost:3000/api/v1/parse',
+        url: URL1,
         method: 'post',
         data: { "data": "JOHN0000MICHAEL0009994567" }
       })
@@ -28,10 +29,11 @@ describe('Run API Call Test', () => {
   })
 
   it('make api call on version 2', async () => {
+    const URL2 = 'http://localhost:3000/api/v2/parse'
 
     try {
       const resp = await axios({
-        url: 'http://localhost:3000/api/v2/parse',
+        url: URL2,
         method: 'post',
         data: { "data": "JOHN0000MICHAEL0009994567" }
       })
