@@ -5,7 +5,7 @@ Date: August 28, 2020
 License: MIT
 ========================================= */
 
-module.exports = (function createModule() {
+module.exports = (function() {
 
   function listener() {
     console.log("WebServer: http://localhost:3000");

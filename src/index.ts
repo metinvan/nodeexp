@@ -13,7 +13,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const utils = require('./utils/utils')
 
-export default (function Server() {
+export default (function() {
 
   const app: any = express()
 

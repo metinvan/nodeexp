@@ -5,7 +5,7 @@ Date: August 28, 2020
 License: MIT
 ========================================= */
 
-module.exports = (function createModule() {
+module.exports = (function() {
 
   function extractName(data: string, version = "v1") {
     const res1 = findFirstName(data)
